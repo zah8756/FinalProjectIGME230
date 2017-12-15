@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="documentation.css">
+    <title>documentation</title>
+</head>
+<body>
+        <div id="background">
+            <button id="home" type="button" onclick="location.href='https://people.rit.edu/ssm3406/zah8756/project4/homePage/home.html';"><i class="fa fa-home" aria-hidden="true"></i></button>
+            <h1>Documentation</h1>
+            <p id="head">
+            Font: <a href="https://fonts.google.com/specimen/Roboto+Slab">Roboto Slab</a> from <a href="https://fonts.google.com/">Google fonts</a>
+            <br>
+            Library: <a href="http://animejs.com">Anime.js</a>,<a href="http://fontawesome.io/">Font Awesome</a>
+            <br>
+            GitHub: <a href="https://github.com/zah8756/FinalProjectIGME230">FinalProjectIGME230</a>
+            </p>
+            <h2>Home</h2>
+            <ul>
+               <li>
+                    When the buttons are hovered over they change color using CSS and WebKit transitions, your mouse also changes to a pointer when you hover over a button using WebKit transitions. When a button is clicked, they will lead you to the corresponding activity page utilizing the javascript property href.location. The last thing of interest on the main page would be the link to this reference document which changes colors when hovering over the text; it uses the WebKit transitions in CSS to create the effect. All elements on the page were created by my self in Adobe Illustrator or by using CSS on divs.
+                </li> 
+            </ul>
+            <br>
+            <h2>tutorial page</h2>
+            <ul>
+               <li>
+                    In this first page, I used a block the same color as the background to cover the dot of I in the word hidden.I then replaced the dot with a circular div in which Produces different effects after each click. With the first clicked it moves up and down with the second left and right, and on the third, it moves to the bottom of the screen to become my button.When it is clicked a fourth time, it changes the text on the page to "you found my button" while the button turns green.To produce these effects I used multiple anime.js  to translate the dot when it was clicked. I also created a counter so that it would remember the number of times it was clicked. Because I was not clicking a button I used clicked jquery function to see if my object was being clicked or not.Using animate.js with each click another small animation function fired off. With the last click the function that activated also changed the inner text of my p class and moved my invisible box using anime.js. Lastly, I used Font Awesome for the icon inside my home button the same is true for every page except the home page.This page does not use the robot slab font.   
+                </li> 
+            </ul>
+            <br>
+        <h2>Pile page</h2>
+        <ul>
+           <li>
+                Many svgs are pilled on top of each other in this page with my button being at the very bottom. I used the jquery function draggable which we learned in class to make all of my svgs draggable. Since each svg is on top of one another, you must drag them off each other to find the small button. Once the button is clicked, it expands and changes color using the anime.js function. The button's inner text is also changed to "You found my hidden button."
+            </li> 
+        </ul>
+        <br>
+        <h2>Cups page</h2>
+        <ul>
+           <li>
+                To start off as the pages load my three svg cups move using multiple anime.js functions.At the same time, the a ball becomes invisible by changing its opacity using anime .js.Until those functions are complete, the entire page is covered with an invisible box so that they cannot be interacted with until the original animation is over.When a cup is clicked, it activates the jquery click function which in turn activates an anime.js function lifting the clicked cup by translating it up and tilting it to the side before doing the reverse and bring the cup back down.The rising cup revals that the object is not there. The other functionality of this page is hidden in the tablecloth. when clicked like the cup it sets off the click function revealing that the button was under the table when clicked the button turns green using an anime.js function 
+            </li> 
+        </ul>
+        <br>
+        <h2>Above and Beyond</h2>
+        <ul>
+           <li>
+                All of my svgs and content were created by me using Adobe Illustrator and then importing them into my code. Throughout this final project period, I taught my self how to create animation from simple movements of a line to multiple complex movements using many keyframes tediously placing objects to make sure they end up where I needed them.While my svgs were simple With anime.js  they became able to move in any way I saw fit. I also blended my understanding of anime.js with jquery to create some better than the sum of their parts. 
+            </li> 
+        </ul>
+        <br>
+
+
+            </div>
+            
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>   
+            <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+           
+       
+</body>
+</html>
