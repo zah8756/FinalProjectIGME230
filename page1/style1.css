@@ -1,0 +1,65 @@
+/*sets all paragraph tags to a font size of 130px aligns them gives them a 20% margin top
+creates a 2px letter spacing , gives a 2px outline to the text and sets the cursor to stay as an arrow */
+p{
+    font-size: 130px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    margin-top:20%; 
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px black;
+    cursor:default;
+}
+/*creates a dot verry similar to the text found in the p tag and places it over the dot in the i */
+.circle{
+    background-color: white;
+    width:15px;
+    height:15px;
+    border: 2px solid black;
+    position: absolute;
+    border-radius: 60px;
+    left:49%;
+    top:55%;
+    cursor: pointer;
+}
+/* creates abox the same color as the background that goes over the dot in the I */
+.invis
+{
+    position: absolute;
+    height:50px;
+    width:50px;
+    background-color: #6379FF;
+    left:47%;
+    top:52%;
+    cursor: default;
+}
+/* sets the background color to a blue color and sets the size of the page to 800px by 800px
+alos sets position to relative*/
+#background{
+    background-color: #6379FF;
+    height: 800px;
+    width: 800px;
+    position: relative;
+    margin: 0 auto;
+}
+
+/*creates the home button and make it the highest z-index of any page
+sets the border radius to round the button
+sets teh positon to absoloute so that it will stay the the same place when moving to diffrent sized screens*/
+#home{
+    position: absolute;
+    width:50px;
+    height: 50px;
+    background-color:#000080; 
+    border-radius: 10px;
+    z-index: 6;
+    color: white;
+}
+/*makes the font awsome icon larger inside my button*/
+#home .fa{
+    font-size: 30px;
+}
+/* creates a coaintainer to help position objects with absoloute positions */
+#container{
+position: relative;
+}

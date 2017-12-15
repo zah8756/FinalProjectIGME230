@@ -1,0 +1,148 @@
+/*sets everything i the cup id to a width of 80% and centers them  */
+#cups{
+    width:80%;
+    margin: auto;
+    text-align: center;
+}
+
+/*creates the home button and make it the highest z-index of any page
+sets the border radius to round the button
+sets teh positon to absoloute so that it will stay the the same place when moving to diffrent sized screens*/
+#home{
+    position: absolute;
+    width:50px;
+    height: 50px;
+    background-color:#000080; 
+    border-radius: 10px;
+    z-index: 6;
+    color: white;
+    cursor: pointer;
+}
+/*makes the font awsome icon larger inside my button*/
+#home .fa{
+    font-size: 30px;
+}
+/* sets every cup in the cup class to have a relative position,the same size and places them into the correct spot */
+.cup{
+    margin: 4px;
+    margin-top: 300px;
+    margin-bottom: 0px;
+    position: relative;
+    width:100px;
+    height: 100px;
+    
+    display: inline-block;
+}
+/* the background div sets the background color to black and sets the size of the page to be 800px by 800px.it also sets teh background positon to be relative */
+#background{
+    height: 800px;
+    width: 800px;
+    background-color:black; 
+    position: relative;
+    margin: auto;
+    margin-top: 30px;
+    z-index: 1;
+    
+}
+/* sets the fake div to look like a red ball
+sets the color to red
+has a size of 60px by 60xp
+centers itself
+and initialy makes its self invisible*/
+.fake{
+    width:60px;
+    height: 60px;
+    border-radius: 40px;
+    background-color:red;
+    visibility:initial; 
+    margin:0 auto;
+    opacity: 0;
+  
+}
+/* sets the base of the to be a width 440px and height 40px
+sets its color to brown and centers its self   */
+.base{
+    width: 440px;
+    height: 50px;
+    position: relative;
+    background-color: #804000;
+    margin: 0 auto;
+
+}
+/* sets all leg classes to have a position of absoloute the same width and heigh and a color of brown */
+.leg{
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    background-color: #804000;
+}
+/* sets the posion of the left leg */
+.leg.left{
+ 
+    left:22.5%;
+   
+
+}
+/* sets the positon of the right leg */
+.leg.right{
+    left:71.3%;
+    
+}
+/* sets the size,border ,border-radius of all cloth classes also sets the positon to absoloute */
+.cloth{
+    position: absolute;
+    width: 60px;
+    height: 200px;
+    background-color:navy;
+    border-radius: 30px;
+    border:2px solid black;
+}
+/* sets the position left most cloth */
+.cloth.leftLeft{
+   left: 28.5%;
+}
+/* sets the position left center cloth */
+.cloth.leftCenter{
+    left:35%;
+}
+/* sets the position left right cloth */
+.cloth.leftRight{
+    left:42%;
+}
+
+/* sets the position right left cloth */
+.cloth.rightLeft{
+    left: 49.6%;
+}
+/* sets the position right center cloth */
+.cloth.rightCenter{
+    left:56.5%;
+}
+/* sets the position right most cloth */
+.cloth.rightRight{
+    left: 63.6%;
+}
+/* sets the color,size,border radius, and positon of my button */
+.answer{
+    position: absolute;
+    background-color:red;
+    width:60px;
+    height: 60px;
+    border-radius: 40px;
+    left:45.9%;
+    top: 200%;
+}
+/* creates an invisible block that prevents people from interfering with the cups while they are moving */
+.prevent{
+    position: absolute;
+    width:100%;
+    height:100%;
+     z-index: 5; 
+    visibility: initial;
+  
+}
+/* creates a coaintainer to help position objects with absoloute positions */
+#container{
+    position: relative;
+    
+}
